@@ -695,7 +695,15 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  display: none; }
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s; }
+  .gallery__slick-wrap.show {
+    opacity: 1;
+    visibility: visible; }
+
+.gallery__slick-wrap-1 {
+  /*display: block;*/ }
 
 .gallery__slick-content {
   color: #FFF;
@@ -822,7 +830,8 @@ body {
     background-color: #FFF; }
 
 .footer {
-  margin-top: 86px; }
+  margin-top: 86px;
+  padding-bottom: 37px; }
 
 .footer__logo {
   width: 254px;
