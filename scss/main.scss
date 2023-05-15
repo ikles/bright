@@ -325,11 +325,25 @@ body {
   margin-top: 51px;
 }
 
+.gallery__wrap {
+  position: relative;
+}
+
 .gallery__row {
   margin-bottom: 82px;
   display: flex;
-  align-items: flex-start;
-  position: relative;  
+  align-items: flex-start;  
+}
+
+.sl-close {
+  background: url("../img/sl-close.png") $nr center;
+  width: 52px;
+  height: 51px;
+  position: absolute;
+  top: 99px;
+  right: 63px;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .gallery__slick {
@@ -348,7 +362,7 @@ body {
     height: 51px;
     background: url("../img/slick-arrow.png") $nr 0 0;
     top: 100px;
-    right: 88px;
+    right: 158px;
     li {
       button {
         padding: 0;        
@@ -373,6 +387,7 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(#000, 0.8);
+  display: none;
 }
 
 .gallery__slick-content {

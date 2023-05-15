@@ -19,11 +19,39 @@ jQuery(document).ready(function( $ ) {
   });
 
 
+$('.sl-close').click(function () {
+  $('.gallery__slick-wrap').fadeOut();
+});
+
+
+$('.gallery__item-1').click(function (e) {
+  e.preventDefault();
+  $('.gallery__slick-wrap-1').fadeIn();
+});
+
+$('.gallery__item-2').click(function (e) {
+  e.preventDefault();
+  $('.gallery__slick-wrap-2').fadeIn();
+});
+
+$('.gallery__item-3').click(function (e) {
+  e.preventDefault();
+  $('.gallery__slick-wrap-3').fadeIn();
+});
+
+$('.gallery__item-4').click(function (e) {
+  e.preventDefault();
+  $('.gallery__slick-wrap-4').fadeIn();
+});
+
+$('.gallery__item-5').click(function (e) {
+  e.preventDefault();
+  $('.gallery__slick-wrap-5').fadeIn();
+});
 
 
 
-
-$('.gallery__slick').slick({
+$('.gallery__slick-1, .gallery__slick-2, .gallery__slick-3, .gallery__slick-4, .gallery__slick-5').slick({
   infinite: true,    
   speed: 800,
   slidesToScroll: 1,

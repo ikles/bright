@@ -638,6 +638,9 @@ body {
 .gallery {
   margin-top: 51px; }
 
+.gallery__wrap {
+  position: relative; }
+
 .gallery__row {
   margin-bottom: 82px;
   display: -webkit-flex;
@@ -645,8 +648,17 @@ body {
   display: flex;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
-          align-items: flex-start;
-  position: relative; }
+          align-items: flex-start; }
+
+.sl-close {
+  background: url("../img/sl-close.png") no-repeat center;
+  width: 52px;
+  height: 51px;
+  position: absolute;
+  top: 99px;
+  right: 63px;
+  cursor: pointer;
+  z-index: 10; }
 
 .gallery__slick {
   padding-top: 206px;
@@ -663,7 +675,7 @@ body {
     height: 51px;
     background: url("../img/slick-arrow.png") no-repeat 0 0;
     top: 100px;
-    right: 88px; }
+    right: 158px; }
     .gallery__slick .slick-arrow li button {
       padding: 0;
       border: none; }
@@ -682,7 +694,8 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none; }
 
 .gallery__slick-content {
   color: #FFF;
