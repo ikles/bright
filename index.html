@@ -17,7 +17,7 @@
 <body>
 
   <div class="wrapper">
-    <div class="container">
+    <div class="contain">
       <div class="header" id="header">        
         <div class="header__row">
           <a href="" class="logo">
@@ -33,152 +33,165 @@
           </div>
         </div>        
       </div>
-      <div class="banner"><img src="img/banner.jpg" class="banner__img" /></div>
-      <div class="about-servs__row">
-        <div class="about-servs__col-1" id="about">
-          <div class="h2">About us</div>
-          <div class="about__content">
-            <p class="p">
-              Welcome to our media production agency based in Miami, where we specialize in delivering high-quality visuals for a wide range of needs. Our talented team of photographers and videographers are dedicated to capturing
-              stunning images and videos that bring out the best in every moment, product, or project.
-            </p>
-            <p class="p">
-              With a focus on creativity, professionalism, and attention to detail, we work closely with our clients to deliver exceptional content that meets their specific requirements. Whether you're a commercial company or a
-              private individual, we have the expertise and experience to help you elevate your visual content. Contact us to learn more about our services and how we can help you capture the perfect shot.
-            </p>
-          </div>
-        </div>
-        <div class="about-servs__col" id="services">
-          <div class="h2">services</div>
-          <div class="services__row">
-            <div class="services__item">
-              <strong class="services__title">Photography &amp; Videography:</strong>
-              Professional images and videos for personal and commercial use
-            </div>
-            <div class="services__item">
-              <strong class="services__title">Digital Content &amp; 3D Development: </strong>
-              Stand out with engaging digital content and 3D visuals
-            </div>
-            <div class="services__item">
-              <strong class="services__title">Retouching &amp; Video Editing:</strong>
-              Enhance your photos and videos to look their best.
-            </div>
-            <div class="services__item">
-              <strong class="services__title">Rental Services:</strong>
-              Access to top-quality studios, properties, yachts, and cars for your shoot
-            </div>
-            <div class="services__item"><strong class="services__title">Styling &amp; Full-Service Coordination: </strong>
-            Let us handle every aspect of your shoot, from styling to production</div>
-            <div class="services__item"><strong class="services__title">Event Planning &amp; Experiential Services: </strong>
-            Make your event or activation a success with our planning and execution expertise</div>
-          </div>
-        </div>
+      <div class="banner"><img src="img/banner.jpg" class="banner__img" />
       </div>
     </div>
-    <div class="work" id="work">
-      <div class="container">
-        <div class="h2">work</div>
-        <p class="work__p p">Explore our portfolio to see examples of our previous work, which includes stunning visuals for a variety of projects and needs.</p>
-      </div>
-      <div class="gallery">        
-        <div class="gallery__wrap">
-          <div class="container">
-            <div class="gallery__row">
-              <a href="" data-item-count="1" class="gallery__item gallery__item-1" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
-                <span class="gallery__img-w"><img src="img/gallery-1.jpg" class="gallery__img" /></span><span class="gallery__name">01 Katya</span>
-              </a>
-              <a href="" data-item-count="2" class="gallery__item gallery__item-2" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="500">
-                <span class="gallery__img-w"><img src="img/gallery-2.jpg" class="gallery__img" /></span><span class="gallery__name">02 Katya</span>
-              </a>
-              <a href="" data-item-count="3" class="gallery__item gallery__item-3" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="700">
-                <span class="gallery__img-w"><img src="img/gallery-3.jpg" class="gallery__img" /></span><span class="gallery__name">03 Katya</span>
-              </a>
+    <div class="sections">
+      <div class="about-servs">
+        <div class="contain">
+          <div class="about-servs__row">
+            <div class="about-servs__col-1" id="about">
+              <div class="h2 accordion-header active-header">About us</div>
+              <div class="about__content accordion-content open-content">
+                <p class="p">
+                  Welcome to our media production agency based in Miami, where we specialize in delivering high-quality visuals for a wide range of needs. Our talented team of photographers and videographers are dedicated to capturing
+                  stunning images and videos that bring out the best in every moment, product, or project.
+                </p>
+                <p class="p">
+                  With a focus on creativity, professionalism, and attention to detail, we work closely with our clients to deliver exceptional content that meets their specific requirements. Whether you're a commercial company or a
+                  private individual, we have the expertise and experience to help you elevate your visual content. Contact us to learn more about our services and how we can help you capture the perfect shot.
+                </p>
+              </div>
+
+            </div>
+            <div class="about-servs__col" id="services">
+              <div class="h2 accordion-header">services</div>
+              <div class="accordion-content">
+                <div class="services__row">
+                  <div class="services__item">
+                    <strong class="services__title">Photography &amp; Videography:</strong>
+                    Professional images and videos for personal and commercial use
+                  </div>
+                  <div class="services__item">
+                    <strong class="services__title">Digital Content &amp; 3D Development: </strong>
+                    Stand out with engaging digital content and 3D visuals
+                  </div>
+                  <div class="services__item">
+                    <strong class="services__title">Retouching &amp; Video Editing:</strong>
+                    Enhance your photos and videos to look their best.
+                  </div>
+                  <div class="services__item">
+                    <strong class="services__title">Rental Services:</strong>
+                    Access to top-quality studios, properties, yachts, and cars for your shoot
+                  </div>
+                  <div class="services__item"><strong class="services__title">Styling &amp; Full-Service Coordination: </strong>
+                  Let us handle every aspect of your shoot, from styling to production</div>
+                  <div class="services__item"><strong class="services__title">Event Planning &amp; Experiential Services: </strong>
+                  Make your event or activation a success with our planning and execution expertise</div>
+                </div>
+              </div>
             </div>
           </div>
-          
-          <div class="gallery__slick-wrap gallery__slick-wrap-1">
-            <div class="sl-close"></div>
-            <div class="gallery__slick gallery__slick-1">
-              @@include('var/_gallery-slick.html')
-            </div>
-          </div><!--gallery__slick-wrap-->
-
-          <div class="gallery__slick-wrap gallery__slick-wrap-2">
-            <div class="sl-close"></div>
-            <div class="gallery__slick gallery__slick-2">
-              @@include('var/_gallery-slick.html')
-            </div>
-          </div><!--gallery__slick-wrap-->
-
-          <div class="gallery__slick-wrap gallery__slick-wrap-3">
-            <div class="sl-close"></div>
-            <div class="gallery__slick gallery__slick-3">
-              @@include('var/_gallery-slick.html')
-            </div>
-          </div><!--gallery__slick-wrap-->
-
-        </div><!--gallery__wrap-->
-        <div class="gallery__wrap">
-          <div class="container">
-            <div class="gallery__row">
-              <a href="" data-item-count="4" class="gallery__item gallery__item-4" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
-                <span class="gallery__img-w"><img src="img/gallery-21.jpg" class="gallery__img" /></span>
-              </a>
-              <a href="" data-item-count="5" class="gallery__item gallery__item-5" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="500">
-                <span class="gallery__img-w"><img src="img/gallery-22.jpg" class="gallery__img" /></span>
-              </a>
-            </div><!--gallery__wrap-->
-          </div>
-
-          <div class="gallery__slick-wrap gallery__slick-wrap-4">
-            <div class="sl-close"></div>
-            <div class="gallery__slick gallery__slick-4">
-              @@include('var/_gallery-slick.html')
-            </div>
-          </div><!--gallery__slick-wrap-->
-
-          <div class="gallery__slick-wrap gallery__slick-wrap-5">
-            <div class="sl-close"></div>
-            <div class="gallery__slick gallery__slick-5">
-              @@include('var/_gallery-slick.html')
-            </div>
-          </div><!--gallery__slick-wrap-->
         </div>
-
-
-
       </div>
+      <div class="work" id="work">
+        <div class="contain">
+          <div class="h2">work</div>
+          <p class="work__p p">Explore our portfolio to see examples of our previous work, which includes stunning visuals for a variety of projects and needs.</p>
+        </div>
+        <div class="gallery">        
+          <div class="gallery__wrap" id="gallery__wrap-1">
+            <div class="contain">
+              <div class="gallery__row">
+                <a href="#gallery__wrap-1" data-item-count="1" class="gallery__item gallery__item-1" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+                  <span class="gallery__img-w"><img src="img/gallery-1.jpg" class="gallery__img" /></span><span class="gallery__name">01 Katya</span>
+                </a>
+                <a href="#gallery__wrap-1" data-item-count="2" class="gallery__item gallery__item-2" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="500">
+                  <span class="gallery__img-w"><img src="img/gallery-2.jpg" class="gallery__img" /></span><span class="gallery__name">02 Katya</span>
+                </a>
+                <a href="#gallery__wrap-1" data-item-count="3" class="gallery__item gallery__item-3" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="700">
+                  <span class="gallery__img-w"><img src="img/gallery-3.jpg" class="gallery__img" /></span><span class="gallery__name">03 Katya</span>
+                </a>
+              </div>
+            </div>
 
+            <div class="gallery__slick-wrap gallery__slick-wrap-1">
+              <div class="sl-close"></div>
+              <div class="gallery__slick gallery__slick-1">
+                @@include('var/_gallery-slick.html')
+              </div>
+            </div><!--gallery__slick-wrap-->
 
+            <div class="gallery__slick-wrap gallery__slick-wrap-2">
+              <div class="sl-close"></div>
+              <div class="gallery__slick gallery__slick-2">
+                @@include('var/_gallery-slick.html')
+              </div>
+            </div><!--gallery__slick-wrap-->
 
+            <div class="gallery__slick-wrap gallery__slick-wrap-3">
+              <div class="sl-close"></div>
+              <div class="gallery__slick gallery__slick-3">
+                @@include('var/_gallery-slick.html')
+              </div>
+            </div><!--gallery__slick-wrap-->
 
-    </div>
-    <div class="container">
+          </div><!--gallery__wrap-->
+          <div class="gallery__wrap" id="gallery__wrap-2">
+            <div class="contain">
+              <div class="gallery__row">
+                <a href="#gallery__wrap-2" data-item-count="4" class="gallery__item gallery__item-4" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
+                  <span class="gallery__img-w"><img src="img/gallery-21.jpg" class="gallery__img" /></span>
+                </a>
+                <a href="#gallery__wrap-2" data-item-count="5" class="gallery__item gallery__item-5" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="500">
+                  <span class="gallery__img-w"><img src="img/gallery-22.jpg" class="gallery__img" /></span>
+                </a>
+              </div><!--gallery__wrap-->
+            </div>
+
+            <div class="gallery__slick-wrap gallery__slick-wrap-4">
+              <div class="sl-close"></div>
+              <div class="gallery__slick gallery__slick-4">
+                @@include('var/_gallery-slick.html')
+              </div>
+            </div><!--gallery__slick-wrap-->
+
+            <div class="gallery__slick-wrap gallery__slick-wrap-5">
+              <div class="sl-close"></div>
+              <div class="gallery__slick gallery__slick-5">
+                @@include('var/_gallery-slick.html')
+              </div>
+            </div><!--gallery__slick-wrap-->
+          </div>
+        </div>
+      </div>
       <div class="contact-us" id="contact">
-        <div class="h2">Contact Us</div>
-        <p class="contact-us__p p">
-          Thank you for your interest in our services! Please fill out the form above to request a quote or book a service. We will get back to you within 24 hours to discuss your needs and provide you with a personalized solution. If
-          you prefer, you can also contact us directly by phone or email. We look forward to working with you!
-        </p>
-        <a href="" class="inst">Instagram</a>
-        <form class="contact-us__form">
-          <div class="contact-us__form-text">KEEP UP WITH THE LATEST, FOR ALL THINGS STURDY. <br>DROP YOUR EMAIL BELOW, AND LET’S STAY CONNECTED.</div>
-          <div class="contact-us__form-w">
-            <input type="text" class="contact-us__input" placeholder="your email: _" />
-            <button class="contact-us__btn">submit</button>
-          </div>
-        </form>
-      </div>
-      <div class="footer">
-        <a href="" class="footer__logo"><img src="img/logo.png" class="logo__img" /></a>
+        <div class="contain">
+          <div class="h2 accordion-header">Contact Us</div>
+          <div class="accordion-content">
+          <p class="contact-us__p p">
+            Thank you for your interest in our services! Please fill out the form above to request a quote or book a service. We will get back to you within 24 hours to discuss your needs and provide you with a personalized solution. If
+            you prefer, you can also contact us directly by phone or email. We look forward to working with you!
+          </p>
+          <a href="" class="inst">Instagram</a>
+          <form class="contact-us__form">
+            <div class="contact-us__form-text">KEEP UP WITH THE LATEST, FOR ALL THINGS STURDY. <br>DROP YOUR EMAIL BELOW, AND LET’S STAY CONNECTED.</div>
+            <div class="contact-us__form-w">
+              <input type="text" class="contact-us__input" placeholder="your email: _" />
+              <button class="contact-us__btn">submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-    <a href="#header" class="to-top"><img src="img/to-top.png" /></a>
   </div>
+  <div class="contain">
+    <div class="footer">
+      <a href="" class="footer__logo"><img src="img/logo.png" class="logo__img" /></a>
+    </div>
+  </div>
+  <a href="#header" class="to-top"><img src="img/to-top.png" /></a>
+</div>
 
-  <!--wrapper-->
+<!--wrapper-->
 
-  @@include('var/_scripts.html')
+<div class="cursor"></div>
+<div class="follower"></div>
+
+
+
+
+@@include('var/_scripts.html')
 </body>
 </html>
 
